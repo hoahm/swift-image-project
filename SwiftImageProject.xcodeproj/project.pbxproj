@@ -13,6 +13,7 @@
 		CC6622A41B02584A00BACAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6622A31B02584A00BACAE4 /* Images.xcassets */; };
 		CC6622A71B02584A00BACAE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6622A51B02584A00BACAE4 /* LaunchScreen.xib */; };
 		CC6622B31B02584A00BACAE4 /* SwiftImageProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6622B21B02584A00BACAE4 /* SwiftImageProjectTests.swift */; };
+		CC6622BD1B0261DE00BACAE4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6622BC1B0261DE00BACAE4 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CC6622AC1B02584A00BACAE4 /* SwiftImageProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftImageProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6622B11B02584A00BACAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6622B21B02584A00BACAE4 /* SwiftImageProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImageProjectTests.swift; sourceTree = "<group>"; };
+		CC6622BC1B0261DE00BACAE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6622BD1B0261DE00BACAE4 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		CC66228E1B02584900BACAE4 = {
 			isa = PBXGroup;
 			children = (
+				CC6622BC1B0261DE00BACAE4 /* CoreImage.framework */,
 				CC6622991B02584A00BACAE4 /* SwiftImageProject */,
 				CC6622AF1B02584A00BACAE4 /* SwiftImageProjectTests */,
 				CC6622981B02584A00BACAE4 /* Products */,

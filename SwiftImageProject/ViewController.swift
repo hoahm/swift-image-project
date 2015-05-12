@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swiftMan: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,21 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func applyEffect(sender: AnyObject) {
+
+        let inputImage:CIImage = CIImage(image: swiftMan.image)
+        
+        let drawingContext:CIContext = CIContext(options: nil)
+        
+        let filterParameters:Dictionary = [kCIInputImageKey: inputImage]
+        
+        let filter:CIFilter = CIFilter(name: "CIPhotoEffectMono", withInputParameters: filterParameters)
+        
+        let outputImage:CIImage = filter.outputImage
+        
+        let imageRef:CGImageRef = drawingContext.createCGImage(outputImage, fromRect: outputImage.extent())
+        
+        swiftMan.image = UIImage(CGImage: imageRef)
+    }
 }
 
